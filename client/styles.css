@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    margin-top: 3rem;
+    background-image: linear-gradient(45deg, rgba(216, 174, 36, 0.589), rgb(240, 179, 122));
+    ;
+    
+}
+
+.addItems-container{
+    background: lightgreen;
+    /* border-radius: 50px; */
+}
+
+.addItems-container, .displayItems-container{
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 2px solid brown;
+    box-shadow: 0 5px 10px brown;
+}
+
+.addItems-title, .displayItems-title{
+    text-transform: capitalize;
+}
+
+.addItems-title{
+    color:rgb(216, 94, 216);
+}
+
+.addItems-action, .displayItems-action{
+    border: 2px solid #272932;
+    padding: 0.5rem 0;
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+    display: none;
+}
+
+.addItems-input{
+    background: transparent;
+    border: none;
+    border-bottom: 5px solid brown;
+    width: 100%;
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: #9e90a2;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.addItems-submit,.displayItems-clear{
+    display: block;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    outline: none;
+}
+
+.addItems-submit{
+    color: brown;
+    background: transparent;
+    border: 3px solid brown;
+    transition: all 2s ease;
+}
+
+.addItems-submit:hover{
+    background:red;
+    color: #272932;
+}
+
+.displayItems-container{
+    background: rgb(216, 94, 216);
+    height: 600px
+}
+
+.displayItems-title{
+    color:lightgreen;
+    margin-bottom: 0.25rem;
+}
+
+.grocery-item{
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    transition: all 1s ease-in-out;
+    margin: 0.5rem 0;
+}
+
+.grocery-item:hover{
+    background: #828489;
+}
+
+.grocery-item__title{
+    text-align: left;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color:lightgreen;
+}
+
+.grocery-item__link{
+    color: red;
+    transition: all 2s linear;   
+}
+
+.grocery-item:hover .grocery-item__link{
+    transform: scale(2);
+}
+
+.displayItems-clear{
+    color: purple;
+    background: transparent;
+    border: 3px solid purple;
+    transition: all 2s ease;
+}
+
+.displayItems-clear{
+    background: red;
+    color:#272932;
+    outline:none;
+    background: transparent;
+}
+/*Add utility action classes */
+.alert{
+    color: lightgreen;
+    border-color:lightgreen;
+    display: block;
+    margin-bottom: 0.5rem;
+    
+}
+
+.success{
+    color:purple(32, 184, 32);
+    border-color:purple(32, 184, 32);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px){
+    body{
+        grid-template-columns: 50%;
+    }
+}
+
+.randomSnack-submit { 
+    margin-top:35px;
+
+}
